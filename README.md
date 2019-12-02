@@ -1,6 +1,6 @@
 # lab1-IAD
 ## Preview
-<img src="https://github.com/DumDereDum/lab1-IAD/blob/master/rev/review">
+<img src="https://github.com/DumDereDum/lab1-IAD/blob/master/rev/review"/>
 ## Instaling
 git clone https://github.com/DumDereDum/lab1-IAD <br>
 cd lab1-IAD
