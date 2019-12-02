@@ -1,10 +1,14 @@
 from menu import *
+import os.path
 
 file = "data.db"
-connection = sqlite3.connect(file)
-cursor = connection.cursor()
-if isThereTable(cursor):
+if not os.path.exists(file):
+    connection = sqlite3.connect(file)
+    cursor = connection.cursor()
     makeTable(cursor)
+else:
+    connection = sqlite3.connect(file)
+    cursor = connection.cursor()
 
 ans=-1
 while ans!=0:
