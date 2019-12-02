@@ -1,12 +1,16 @@
 # lab1-IAD
 ## Preview
-<img src="https://github.com/DumDereDum/lab1-IAD/blob/master/rev/review"/>
+<img src="https://github.com/DumDereDum/lab1-IAD/blob/master/rev/review.gif?raw=true"/>
+
 ## Instaling
 git clone https://github.com/DumDereDum/lab1-IAD <br>
 cd lab1-IAD
+
 ## Run
 python3 main.py
+
 ## Functions
+
 ### NB
 > Only Latin characters and number in first and last name(can't start with numbers)<br>
 > The phone number starts with 8 or +7<br>
