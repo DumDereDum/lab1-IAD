@@ -44,7 +44,7 @@ def printAllUsers(cursor):
     for row in table:
         i+=1
         for x in row:
-            print(x, end=" ")
+            print(x, end=' ')
         print()
     if i==0:
         print("The list is empty")
@@ -160,69 +160,4 @@ def isThereTable(curcor):
         return True
     except:
         return False
-
-
-#def isThereTable(cursor, tableName):
-#    query = " SELECT count(*) FROM sqlite_master WHERE type='table' AND name=? "
-#    tableName = (tableName,)
-#    res = cursor.execute(query, tableName)
-#    if res:
-#        return True
-#    return False
-
-
-if __name__ == '__main__':
-
-    connection = sqlite3.connect("data.db")
-    cursor = connection.cursor()
-
-    print(connection)
-
-    printAllUsers(cursor)
-
-    #getAge(cursor, name='Artem', surname="Sara")
-    user = ('Artem', "Sar1")
-    changeResord(connection, cursor, user)
-    print()
-    printAllUsers(cursor)
-    #name = "Artem"
-    #surname = "Saratovtsev"
-    #phone = "+79632317965"
-    #b = "01.09.2000"
-
-    #print(b[0:2], b[3:5], b[6:10])
-    #aa, bb, cc = int(b[0:2]), int(b[3:5]), int(b[6:10])
-    ##aa = 80
-    #if checkData(cc, bb, aa):
-    #    birth = datetime.date(cc, bb, aa)
-    #    print(birth)
-    #else:
-    #    print("Uncorrent data")
-
-
-    #print(1)
-    #printAllUsers(cursor)
-    #for i in range(5):
-    #    user = (name+str(i), surname, phone, birth)
-    #    insertUser(cursor, user)
-    #user = (name, surname, '+79632319999', birth)
-    #insertUser(cursor, user)
-    #printAllUsers(cursor)
-    #print(2)
-    #user = (name+"2", surname)
-    #user = ("*", surname)
-    #deleteUserByName(cursor, user)
-    #printAllUsers(cursor)
-    #print(3)
-    #phone = ('+79632319999', )
-    ##user = ("*", surname)
-    #deleteUserByPhone(cursor, phone)
-    #printAllUsers(cursor)
-    #print(4)
-    #name = '0'
-    #find(cursor, name=name)
-
-    #print(5)
-    #deleteAllUsers(cursor)
-    #printAllUsers(cursor)
 
