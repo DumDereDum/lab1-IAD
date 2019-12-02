@@ -1,14 +1,17 @@
 # lab1-IAD
 ## Instaling
+'''sh
 git clone https://github.com/DumDereDum/lab1-IAD
 cd lab1-IAD
+'''
 ## Run
+'''sh
 python3 main.py
-
+'''
 ## Functions
 ### NB
-> Only Latin characters and number in first and last name(can't start with numbers)
-> The phone number starts with 8 or +7
+> Only Latin characters and number in first and last name(can't start with numbers)<br>
+> The phone number starts with 8 or +7<br>
 
 * 1. Show all records * - Show all records
 * 2. Add new record to the phonebook * - Add new record to the phonebook
