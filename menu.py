@@ -56,7 +56,6 @@ def addUser(connection, cursor):
                 print("This user already exists")
             else:
                 user = (name, surname, phoneNum, birth)
-                print(user)
                 insertUser(connection, cursor, user)
 
             print("Do you want to add new User? \n\t1. Yes\n\t2. No")
@@ -186,11 +185,11 @@ def changeRecord(connection, cursor):
 
         elif ans == '1':
             print("Input name, pls\n"
-                  "Example: 'Artem'\n")
+                  "Example: 'Artem'")
             name = input("Name: ")
 
             print("Input surname, pls\n"
-                  "Example: 'Saratovtsev'\n")
+                  "Example: 'Saratovtsev'")
             surname = input("Surname: ")
             name, surname = name.capitalize(), surname.capitalize()
 
@@ -218,13 +217,3 @@ def changeRecord(connection, cursor):
             print("Incorrect answer!\n"
                   "Do you want to reply again?\n\t1. Yes\n\t2. No")
             ans = input("Your answer: ")
-
-
-if __name__ == '__main__':
-    file = "data.db"
-    connection = sqlite3.connect(file)
-    cursor = connection.cursor()
-    user = ('A', 'S', '88005553535', None)
-    res = addUser(connection, cursor)
-    #insertUser(connection, cursor, user)
-    printAllUsers(cursor)
