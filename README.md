@@ -1,13 +1,9 @@
 # lab1-IAD
 ## Instaling
-'''sh
-git clone https://github.com/DumDereDum/lab1-IAD
+git clone https://github.com/DumDereDum/lab1-IAD <br>
 cd lab1-IAD
-'''
 ## Run
-'''sh
 python3 main.py
-'''
 ## Functions
 ### NB
 > Only Latin characters and number in first and last name(can't start with numbers)<br>
